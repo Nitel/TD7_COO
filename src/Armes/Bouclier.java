@@ -8,4 +8,5 @@ package Armes;
 public class Bouclier extends Arme {
     protected int force =5;
     protected int protection =20;
+    protected enum type {Bouclier}
 }

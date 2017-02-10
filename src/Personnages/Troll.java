@@ -9,6 +9,8 @@ import Armes.Dague;
  */
 public class Troll extends Personnage {
     protected String NomBiere;
+    protected int Cout=5;
+    public enum Type {Troll}
 
     public Troll(final String nom, final String nomBiere) {
         super(nom);
@@ -23,5 +25,13 @@ public class Troll extends Personnage {
 
     public void setNomBiere(final String nomBiere) {
         NomBiere = nomBiere;
+    }
+
+    public int getCout() {
+        return Cout;
+    }
+
+    public void setCout(final int cout) {
+        Cout = cout;
     }
 }

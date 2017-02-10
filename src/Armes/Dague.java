@@ -8,5 +8,6 @@ package Armes;
 public class Dague extends Arme {
     protected int force =20;
     protected int protection =10;
+    protected enum type {Dague}
 
 }

@@ -7,6 +7,16 @@ package Armes;
  */
 public class Arme {
     public int force, protection;
+    public String nom;
+    public enum type {Bouclier,Epee,Dague}
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(final String nom) {
+        this.nom = nom;
+    }
 
     public int getForce() {
         return force;

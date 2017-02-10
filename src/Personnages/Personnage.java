@@ -10,6 +10,8 @@ import java.util.HashMap;
  * @project TD7
  */
 public class Personnage {
+    public enum Type {Humain,Orc,Tauren,Troll}
+    protected int Cout;
     protected String Nom;
     protected int CoefVitalite =100;
     protected HashMap<String,Arme> armeHashMap = new HashMap<>();

@@ -1,3 +1,5 @@
+import Armes.Arme;
+import Armes.ArmeUsine;
 import Decorator.Amplification;
 import Decorator.Enchantement;
 import Personnages.Orc;
@@ -26,5 +28,7 @@ public class PersonnageTest {
         Amplification amplification = new Amplification(Diablon.getArme("droite"),3);
         Diablon.attaquer(Azag);
         assertEquals(87,Azag.getCoefVitalite());
+        ArmeUsine armeUsine = new ArmeUsine();
+        armeUsine.creerArme("Excalibur", Arme.type.Epee);
     }
 }

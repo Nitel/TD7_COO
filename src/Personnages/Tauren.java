@@ -9,7 +9,8 @@ import Armes.*;
  */
 public class Tauren extends Personnage {
     public float TailleCorne;
-    public Arme arme;
+    public enum Type {Tauren}
+    protected int Cout=2;
 
     public Tauren(final String nom, final float taillecorne) {
         super(nom);
@@ -27,4 +28,11 @@ public class Tauren extends Personnage {
         TailleCorne = tailleCorne;
     }
 
+    public int getCout() {
+        return Cout;
+    }
+
+    public void setCout(final int cout) {
+        Cout = cout;
+    }
 }
