@@ -14,4 +14,19 @@ public class Personnage {
         this.arme = arme;
     }
 
+    public String getNom() {
+        return Nom;
+    }
+
+    public int getCoefVitalite() {
+        return CoefVitalite;
+    }
+
+    public Arme getArme() {
+        return arme;
+    }
+
+    public void attaquer(Personnage personnage){
+        personnage.CoefVitalite -= this.arme.force - this.arme.protection;
+    }
 }
