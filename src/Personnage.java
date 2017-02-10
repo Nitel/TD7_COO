@@ -8,9 +8,8 @@ public class Personnage {
     protected int CoefVitalite =100;
     protected Arme arme;
 
-    public Personnage(final String nom, final int coefVitalite, final Arme arme) {
+    public Personnage(final String nom, final Arme arme) {
         Nom = nom;
-        CoefVitalite = coefVitalite;
         this.arme = arme;
     }
 

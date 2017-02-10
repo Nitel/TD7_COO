@@ -4,9 +4,10 @@
  * @project TD7
  */
 public class Orc extends Personnage {
-    protected String TailleOreilles;
+    protected int TailleOreilles;
 
-    public Orc(final String nom, final int coefVitalite, final Arme arme) {
-        super(nom, coefVitalite, arme);
+    public Orc(final String nom, final Arme arme, final int tailleoreilles) {
+        super(nom, arme);
+        this.TailleOreilles= tailleoreilles;
     }
 }

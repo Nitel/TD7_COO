@@ -6,7 +6,7 @@
 public class Humain extends Personnage {
     protected String CouleursYeux;
 
-    public Humain(final String nom, final int coefVitalite, final Arme arme) {
-        super(nom, coefVitalite, arme);
+    public Humain(final String nom, final Arme arme) {
+        super(nom, arme);
     }
 }
