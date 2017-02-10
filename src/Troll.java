@@ -5,4 +5,10 @@
  */
 public class Troll extends Personnage {
     protected String NomBiere;
+
+    public Troll(final String nom, final int coefVitalite, final Arme arme) {
+        super(nom, coefVitalite, arme);
+    }
+
+
 }
